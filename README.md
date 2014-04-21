@@ -2,7 +2,7 @@ fileinput
 =========
 
 A class and functions to quickly write a loop over standard input or a list of 
-files. Heavilly inspired by the fileinput module of Python.
+files. Heavilly inspired by the [fileinput][py-fileinput] module of Python.
 
 
 Installation
@@ -46,12 +46,14 @@ See `examples/` from more uses.
 API documentation
 -----------------
 
-read the sourc for now...
+read the source for now, sorry..
 
 
 
 Todo
 ----
 
- * Test node version and add this to the package.json
  * Support stdin reading for Windows (it now uses /dev/stdin)
+
+
+[py-fileinput]: https://docs.python.org/3/library/fileinput.html "11.3. fileinput — Iterate over lines from multiple input streams"
