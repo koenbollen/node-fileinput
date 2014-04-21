@@ -27,16 +27,18 @@ from stdin (this can also be achieved using '-').
 
 Files can also be passed to the .input() function directly:
 
-   var fileinput = require('fileinput');
+    var fileinput = require('fileinput');
 
-   var lines = 0;
-   fileinput.input(['index.js', 'lib/fileinput.js')
-     .on('line', function(line) {
-     	if(line.toString().trim().length > 0) {
+    var lines = 0;
+    fileinput.input(['index.js', 'lib/fileinput.js')
+      .on('line', function(line) {
+        if(line.toString().trim().length > 0) {
           lines += 1;
-     	}
-     })
-     .on('end', ;
+        }
+      })
+      .on('end', function() {
+        console.log('lines:', lines);
+      });
 
 See `examples/` from more uses.
 

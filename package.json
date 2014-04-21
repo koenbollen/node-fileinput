@@ -1,10 +1,19 @@
 {
   "name": "fileinput",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "description": "A class and functions to quickly write a loop over standard input or a list of files",
+  "keywords": ["files", "io", "lines", "readline", "stdin", "utility"],
   "main": "index.js",
   "author": "Koen Bollen <meneer@koenbollen.nl>",
+  "repository": {
+  	"type": "git",
+  	"url": "https://github.com/koenbollen/node-fileinput.git"
+  },
   "devDependencies": {
     "commander": "^2.2.0"
-  }
+  },
+  "engines": { 
+  	"node": ">=0.6"
+  },
+  "os": [ "!win32" ]
 }

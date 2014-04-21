@@ -8,7 +8,7 @@ fileinput.input()
     if(line[line.length-1] == 0xA) {
       line = line.slice(0, line.length-1);
     }
-    var arr = Array.prototype.reverse.call(new Uint16Array(line));
+    var arr = Array.prototype.reverse.call(new Uint8Array(line));
     process.stdout.write(new Buffer(arr));
     process.stdout.write('\n');
   });
