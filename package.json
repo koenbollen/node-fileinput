@@ -3,5 +3,8 @@
   "version": "0.0.0",
   "description": "A class and functions to quickly write a loop over standard input or a list of files",
   "main": "index.js",
-  "author": "Koen Bollen <meneer@koenbollen.nl>"
+  "author": "Koen Bollen <meneer@koenbollen.nl>",
+  "devDependencies": {
+    "commander": "^2.2.0"
+  }
 }
