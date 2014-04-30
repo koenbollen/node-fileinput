@@ -1,7 +1,7 @@
 
 var fileinput = require('../');
 
-// rev.js - Output files or stdin in reversed order (like man rev)
+// rev.js - Output files or stdin in reversed order (like `man rev')
 
 fileinput.input()
   .on('line', function(line) {
