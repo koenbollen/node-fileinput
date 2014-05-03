@@ -104,9 +104,8 @@ describe('FileInput', function() {
         } else {
           assert.equal(0, this.input.filelineno());
           assert.notEqual(0, this.input.lineno());
-          done();
         }
-      }.bind(this)).on('end', function(){});
+      }.bind(this)).on('end', done);
     });
   });
 
