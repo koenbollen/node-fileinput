@@ -1,9 +1,10 @@
 fileinput
 =========
 
-A class and functions to quickly write a loop over standard input or a list of 
+A class and functions to quickly write a loop over standard input or a list of
 files. Heavilly inspired by the [fileinput][py-fileinput] module of Python.
 
+[![Build Status](https://travis-ci.org/koenbollen/node-fileinput.svg?branch=master)](https://travis-ci.org/koenbollen/node-fileinput)
 
 Installation
 ------------
@@ -21,7 +22,7 @@ Typical Usage
       	console.log( fileinput.lineno(), line.toString('utf8') );
       });
 
-This will read files specified in `process.argv` and emit each line to the 
+This will read files specified in `process.argv` and emit each line to the
 event _line_. When no filenames are found in argv it will default to reading
 from stdin (this can also be achieved using '-').
 
