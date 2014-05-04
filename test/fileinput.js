@@ -20,7 +20,7 @@ describe('FileInput', function() {
     });
     it('should use one file if given a string', function() {
       var input = new fileinput.FileInput('a');
-      assert.equal('a', input._files[0]);
+      assert.deepEqual(['a'], input._files);
     });
     it('should use args when a commander like object is given', function() {
       var files = ['a', 'b', 'c'];

@@ -49,7 +49,7 @@ describe('splitLines()', function() {
       done();
     });
   });
-  it('should result in 2 lines when called with at string with 2 newlines', function(done) {
+  it('should result in 2 lines when called with a string with 2 newlines', function(done) {
     var buf = new Buffer('Snow in my shoe\nAbandoned\nSparrow\'s nest', 'utf8');
     utils.splitLines(buf, function(lines, remain) {
       assert.equal(2, lines.length);
