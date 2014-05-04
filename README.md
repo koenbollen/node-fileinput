@@ -15,31 +15,35 @@ Installation
 Typical Usage
 -------------
 
-    var fileinput = require('fileinput');
+```js
+var fileinput = require('fileinput');
 
-    fileinput.input()
-      .on('line', function(line) {
-      	console.log( fileinput.lineno(), line.toString('utf8') );
-      });
+fileinput.input()
+  .on('line', function(line) {
+  	console.log( fileinput.lineno(), line.toString('utf8') );
+  });
+```
 
 This will read files specified in `process.argv` and emit each line to the
 event _line_. When no filenames are found in argv it will default to reading
-from stdin (this can also be achieved using '-').
+from stdin (this can also be achieved by using `-` as a filename).
 
 Files can also be passed to the .input() function directly:
 
-    var fileinput = require('fileinput');
+```js
+var fileinput = require('fileinput');
 
-    var lines = 0;
-    fileinput.input(['index.js', 'lib/fileinput.js')
-      .on('line', function(line) {
-        if(line.toString().trim().length > 0) {
-          lines += 1;
-        }
-      })
-      .on('end', function() {
-        console.log('lines:', lines);
-      });
+var lines = 0;
+fileinput.input(['index.js', 'lib/fileinput.js')
+  .on('line', function(line) {
+    if(line.toString().trim().length > 0) {
+      lines += 1;
+    }
+  })
+  .on('end', function() {
+    console.log('lines:', lines);
+  });
+```
 
 See `examples/` from more uses.
 
@@ -47,7 +51,7 @@ See `examples/` from more uses.
 API documentation
 -----------------
 
-read the source for now, sorry..
+Read the examples, tests and source for now, sorry...
 
 
 

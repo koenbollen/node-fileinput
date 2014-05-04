@@ -5,9 +5,11 @@
   "keywords": [
     "files",
     "io",
+    "lazy",
     "lines",
     "readline",
     "stdin",
+    "streaming",
     "utility"
   ],
   "main": "index.js",
