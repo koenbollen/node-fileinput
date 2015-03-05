@@ -45,6 +45,25 @@ fileinput.input(['index.js', 'lib/fileinput.js')
   });
 ```
 
+Or use it in combination with [commander](https://github.com/tj/commander.js):
+
+```js
+var fileinput = require('fileinput');
+
+var program = require('commander');
+program.version('1.0.0')
+  .usage('[options] file...')
+  .option('-v, --verbose', 'output line')
+  .parse(process.argv);
+
+fileinput.input(program)
+  .on('line', function(line) {
+    if(program.verbose) {
+      process.stdout.write(line.toString());
+    }
+  });
+```
+
 See `examples/` from more uses.
 
 
